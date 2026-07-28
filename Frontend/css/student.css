@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar {
+  width: 200px;
+  background-color: #0be9f0b9;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+}
+
+.sidebar h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin: 10px 0;
+  text-align: center;
+}
+
+.sidebar ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  display: block;
+  padding: 10px;
+}
+
+.sidebar ul li a:hover {
+  background-color: #1004bc;
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.search-bar input {
+  padding: 8px;
+  font-size: 16px;
+  width: 200px;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+
+.user-info img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-left: 10px;
+
+}
+
+.dashboard-overview {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.overview-card {
+  flex: 1;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(8, 8, 8, 0.1);
+}
+
+.overview-card h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.progress-bar {
+  background-color: #ddd;
+  height: 8px;
+  width: 100%;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progress {
+  background-color: #4CAF50;
+  height: 100%;
+}
+
+.timetable, .exam-results {
+  margin-bottom: 20px;
+}
+
+.timetable h3, .exam-results h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.timetable table, .exam-results table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #f9f4f4;
+  border-radius: 10px;
+  overflow: hidden;
+
+}
+
+table th, table td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #000000;
+}
+
+table th {
+  background-color: #fffdfd;
+}
+
+table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+.noverview-card {
+  flex: 1;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: left;
+  box-shadow: 0 2px 5px rgba(8, 8, 8, 0.1);
+}

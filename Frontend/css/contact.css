@@ -1,0 +1,110 @@
+/* Body styling */
+.bbody {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #fbfcff;
+}
+
+/* Container for the contact form */
+.contact-form-container {
+  background: #e1e7e5;
+  padding: 30px;
+  max-width: 400px;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+/* Heading styling */
+.contact-form-container h2 {
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+/* Form group styling */
+.form-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+label {
+  font-size: 14px;
+  color: #555;
+}
+
+/* Input and Textarea styling */
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 12px;
+  margin-top: 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 16px;
+  background-color: #fafafa;
+  transition: all 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  border-color: #5cb85c;
+  box-shadow: 0 0 5px rgba(92, 184, 92, 0.5);
+  background-color: #fff;
+}
+
+/* Submit button styling */
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #5cb85c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #4cae4c;
+}
+
+/* Smooth transition effects */
+input, textarea, button {
+  transition: all 0.3s ease;
+}
+.footer {
+  background-color: #46b7c1;
+  padding: 20px 0px;
+  width: 100%;
+  float: left;
+  }
+  .footer-logo {
+  width: 40%;
+  }
+  .pheader {
+  background-color: #46b7c1;
+  padding: 20px 0px;
+  width: 70%;
+  float: left;
+  }
+
+  .header {
+    background: #46b7c1;
+    padding: 6px;
+   }
+   .container {
+       width: 1300px;
+         margin: 0px auto;
+     }
