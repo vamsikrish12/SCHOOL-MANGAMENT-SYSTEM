@@ -46,8 +46,7 @@ Team-08/
 ## 🖥️ Usage
 1. Clone this repository:
    ```bash
-  [ git clone https://github.com/vamsikrish12/SCHOOL-MANGAMENT-SYSTEM.git]
-   ```
+  git clone https://github.com/vamsikrish12/SCHOOL-MANGAMENT-SYSTEM.git
    ```
 2. Open `index.html` in your browser to start.  
 
