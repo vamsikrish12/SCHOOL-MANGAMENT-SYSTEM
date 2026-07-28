@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SRKR</title>
+    <!-- Bootstrap CSS for layout -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Icons (Font Awesome) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Custom CSS for styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            display: flex;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            background-color: #0ad9f5;
+            color: white;
+            min-height: 100vh;
+            width: 200px;
+            padding-top: 1rem;
+        }
+        .sidebar h3 {
+            text-align: center;
+            font-weight: bold;
+            margin-bottom: 2rem;
+        }
+        .sidebar a {
+            color: white;
+            text-decoration: none;
+            padding: 12px;
+            display: block;
+            font-size: 1rem;
+        }
+        .sidebar a:hover {
+            background-color: #0056b3;
+        }
+
+        /* Main Content */
+        .main-content {
+            flex-grow: 1;
+            padding: 1rem;
+        }
+
+        /* Dashboard Header */
+        .dashboard-header {
+            padding: 1rem;
+            background-color: #f8f9fa;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #e3e3e3;
+        }
+
+        /* Cards Section */
+        .dashboard-cards {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 1rem;
+        }
+        .card {
+            flex: 1;
+            margin: 0 0.5rem;
+            padding: 0.5rem;
+            border-radius: 08px;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .card h5 ,.Kcards{
+            margin-top: 0.5rem;
+            font-size: 1.1rem;
+        }
+        .card p,.Kcards {
+            font-size: 1.2rem;
+            
+        }
+
+        /* Section Layout */
+        .section {
+            margin-top: 0.5rem;
+        }
+        .section .card {
+            padding: 1rem;
+        }
+
+        /* Table */
+        .table {
+            margin-top: 1rem;
+        }
+        .table th, .table td {
+            vertical-align: middle;
+            text-align: center;
+        }
+
+        /* Additional styles */
+        .badge {
+            font-size: 0.9rem;
+        }
+        .Kcard{
+          flex: 1;
+            margin: 0 0.5rem;
+            padding: 0.5rem;
+            border-radius: 08px;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align:center
+        }
+        .Ncard {
+            flex: 1;
+            margin: 0 0.5rem;
+            padding: 0.5rem;
+            border-radius: 08px;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            
+        }
+        .overview-card {
+          flex: 1;
+          background-color: #fff;
+          padding: 20px;
+          border-radius: 8px;
+          text-align: center;
+          box-shadow: 0 2px 5px rgba(8, 8, 8, 0.1);
+        }
+        table th, table td {
+          padding: 12px;
+          text-align: center;
+          border-bottom: 1px solid #000000;
+        }
+
+        table th {
+          background-color: #ffffff;
+        }
+
+        table tr:nth-child(even) {
+          background-color: #ffffff;
+        }
+        .timetable table, .exam-results table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: #ffffff;
+            border-radius: 10px;
+            overflow: hidden;
+
+          }
+          .timetable, .exam-results {
+            margin-bottom: 20px;
+          }
+
+          .timetable h3, .exam-results h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+          }
+        
+    </style>
+</head>
+<body>
+  
+    <!-- Sidebar -->
+     
+    <div class="sidebar d-flex flex-column">
+      <img src="image/dashboard.jpg" alt="Profile Picture" style="width: 40px; height: 40px; border-radius: 50%; margin-left: 8px;">
+      <span style="color: rgb(0, 0, 0);"><b>Meenugu Hani,</b></span>
+        <a href="#"><i class="fas fa-book-open"></i> TEACHERS Detalis</a>
+        <a href="#"><i class="fas fa-calendar-alt"></i> Class Timetables</a>
+        <a href="#"><i class="fas fa-check-circle"></i> Attendance OF Class</a>
+        <a href="#"><i class="fas fa-calendar-alt"></i> Teachers TimeTables</a>
+        <a href="#"><i class="fas fa-bell"></i> Notices</a>
+        <a href="adminlogin.html"><i class="fas fa-sign-out-alt"></i> Logout</a>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+      <marquee behavior="scroll" direction="left" style="background-color: #0ad9f5; color: white; padding: 10px; font-weight: bold;">
+        SRKR School: Intelligence plus curiosity—that is the root of true education. Education is not the filling of a pail, but the lighting of a fire.
+    </marquee>
+        <!-- Dashboard Header -->
+        <div class="dashboard-header d-flex align-items-center justify-content-between">
+            <h6>Satwik|Admin</h6>
+        </div>
+
+        <!-- Dashboard Cards -->
+        <div class="dashboard-cards">
+            <div class="card">
+                <h5><b>TOTAL STUDENTS:</b></h5>
+                <p>4000</p>
+            </div>
+            <div class="card">
+                <h5><b>TOTAL TEACHERS:</b></bNotifications></h5>
+                <p>40</p>
+            </div>
+            <div class="card">
+                <h5><b>NON-TEACHING STAFF:</b></h5>
+                <p>20</p>
+            </div>
+            <div class="card">
+                <h5><b>NOTIFICATIONS:</b></h5>
+                <p>20</p>
+            </div>
+        </div>
+        <div class="dashboard-header d-flex align-items-center justify-content-between">
+            <h4>Campus News:</h4>
+        </div>
+
+        <div class="col-md-12">
+            <div class="card">
+            <div>
+              <marquee direction="up" scrollamount="10" style="height:340px;">
+                <ul>
+                  <li>
+                    <i>01-NOV-2024 :</i> 6th Class results are realesed. <img src="image/new.gif">
+                  </li>
+                  <li>
+                    <i>01-NOV-2024 :</i> 5th Class results are realesed. <img src="image/new.gif">
+                  </li>
+                  <li>
+                    <i>01-NOV-2024 :</i> 4th Class results are realesed. <img src="image/new.gif">
+                  </li>
+                  <li>
+                    <i>01-NOV-2024 :</i> 1Oth Class quarterly results are realesed. <img src="image/new.gif">
+                  </li>
+                  <li>
+                    <i>01-NOV-2024 :</i> 9TH Class results are realesed. <img src="image/new.gif">
+                  </li>
+                  <li>
+                    <i>01-NOV-2024 :</i>8TH Class results are realesed . <img src="image/new.gif">
+                  </li>
+                  <li>
+                    <i>01-NOV-2024 :</i> 7th Class results are realesed.. <img src="image/new.gif">
+                  </li>
+                  <li>
+                    <i>01-NOV-2024 :</i> 6th Class results are realesed. <img src="image/new.gif">
+                  </li>
+                  <li>
+                    <i>01-NOV-2024 :</i> 5th Class results are realesed. <img src="image/new.gif">
+                  </li>
+                  <li>
+                    <i>01-NOV-2024 :</i> 4th Class results are realesed. <img src="image/new.gif">
+                  </li>
+                  <li>
+                    <i>01-NOV-2024 :</i> 1Oth Class quarterly results are realesed. <img src="image/new.gif">
+                  </li>
+                  <li>
+                    <i>01-NOV-2024 :</i> 9TH Class results are realesed. <img src="image/new.gif">
+                  </li>
+                  <li>
+                    <i>01-NOV-2024 :</i>8TH Class results are realesed . <img src="image/new.gif">
+                  </li>
+                  <li>
+                    <i>01-NOV-2024 :</i> 7th Class results are realesed.. <img src="image/new.gif">
+                  </li>
+                  <li>
+                    <i>01-NOV-2024 :</i> 6th Class results are realesed. <img src="image/new.gif">
+                  </li>
+                  <li>
+                    <i>01-NOV-2024 :</i> 5th Class results are realesed. <img src="image/new.gif">
+                  </li>
+                  <li>
+                    <i>01-NOV-2024 :</i> 4th Class results are realesed. <img src="image/new.gif">
+                  </li>
+                  <li>
+                    <i>01-NOV-2024 :</i> 1Oth Class quarterly results are realesed. <img src="image/new.gif">
+                  </li>
+                  <li>
+                    <i>01-NOV-2024 :</i> 9TH Class results are realesed. <img src="image/new.gif">
+                  </li>
+                  <li>
+                    <i>01-NOV-2024 :</i>8TH Class results are realesed . <img src="image/new.gif">
+                  </li>
+                  <li>
+                    <i>01-NOV-2024 :</i> 7th Class results are realesed.. <img src="image/new.gif">
+                  </li>
+                </ul>
+              </marquee>
+            </div>
+          </div>
+        
+        <!-- Information Sections -->
+        <div class="section row">
+            
+          <div class="dashboard-header d-flex align-items-center justify-content-between">
+            <h4><b>CLASS DETAILS:</b></h4>
+        </div><br>
+        <br>
+            <!-- All Expenses Table -->
+            <div class="col-md-12">
+                <div class="card">
+                    
+                    <table class="table table-bordered">
+                        <thead class="table-light">
+                            <tr>
+                                <th>CLASS</th>
+                                <th>SECTION</th>
+                                <th>TOTAL STUDENTS</th>
+                                <th>CLASS TEACHER</th>
+                                <th>CT_NUMBER</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>CLASS I</td>
+                                <td>B</td>
+                                <td>30</td>
+                                <td>IVATURI KASHYAP</td>
+                                <td>123456789</td>
+                            </tr>
+                            <tr>
+                                <td>CLASS II</td>
+                                <td>A</td>
+                                <td>30</td>
+                                <td>TATIKONDA YATHIESWAR</td>
+                                <td>123456789</td>
+                            </tr>
+                            <tr>
+                                <td>CLASS II</td>
+                                <td>B</td>
+                                <td>30</td>
+                                <td>BARRE VENKAT</td>
+                                <td>123456789</td>
+                            </tr>
+                            <tr>
+                                <td>CLASS III</td>
+                                <td>A</td>
+                                <td>30</td>
+                                <td>TEKULA SEKHAR</td>
+                                <td>123456789</td>
+                            </tr>
+                            <tr>
+                                <td>CLASS III</td>
+                                <td>B</td>
+                                <td>30</td>
+                                <td>BANDARU SATHWIKA</td>
+                                <td>123456789</td>
+                            </tr>
+                            <tr>
+                                <td>CLASS IV</td>
+                                <td>A</td>
+                                <td>30</td>
+                                <td>JAMPANI SANDEEP</td>
+                                <td>123456789</td>
+                            </tr>
+                            <tr>
+                                <td>CLASS IV</td>
+                                <td>B</td>
+                                <td>30</td>
+                                <td>MORU PREMKISHORE</td>
+                                <td>123456789</td>
+                            </tr>
+                            <tr>
+                                <td>CLASS V</td>
+                                <td>A</td>
+                                <td>40</td>
+                                <td>MADDURI VAMSI</td>
+                                <td>123456789</td>
+                            </tr>
+                            <tr>
+                                <td>CLASS VI</td>
+                                <td>A</td>
+                                <td>50</td>
+                                <td>MEENUGU HASWANTH</td>
+                                <td>123456789</td>
+                            </tr>
+                            <tr>
+                                <td>CLASS VII</td>
+                                <td>A</td>
+                                <td>30</td>
+                                <td>ANDE LOKESH</td>
+                                <td>123456789</td>
+                            </tr>
+                            <tr>
+                                <td>CLASS VII</td>
+                                <td>B</td>
+                                <td>30</td>
+                                <td>MYLARU PRABHAS</td>
+                                <td>123456789</td>
+                            </tr>
+                            <tr>
+                                <td>CLASS VIII</td>
+                                <td>A</td>
+                                <td>55</td>
+                                <td>SANNIDI BHAVANA</td>
+                                <td>123456789</td>
+                            </tr>
+                            <tr>
+                                <td>CLASS IX</td>
+                                <td>6</td>
+                                <td>30</td>
+                                <td>DAKOJU SRINITYA</td>
+                                <td>123456789</td>
+                            </tr>
+                            <tr>
+                                <td>CLASS X</td>
+                                <td>A</td>
+                                <td>30</td>
+                                <td>DANDU SAHRUDAYA</td>
+                                <td>123456789</td>
+                            </tr>
+                            <tr>
+                                <td>CLASS X</td>
+                                <td>B</td>
+                                <td>30</td>
+                                <td>CH CHANDRASEKHAR</td>
+                                <td>123456789</td>
+                            </tr>
+                            
+                           
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="dashboard-header d-flex align-items-center justify-content-between">
+            <h4><b> SALARY DETAILS:</b></h4>
+        </div><br>
+        <div class="col-md-12">
+            <div class="card">
+                
+                <table class="table table-bordered">
+                    <thead class="table-light">
+                        <tr>
+                            <th>NAME</th>
+                            <th>OCCUPATION</th>
+                            <th>SALRAY</th>
+                            <th>PHONE NUMBER</th>
+                            <th>ACCOUNT NUMBER</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>IVATURI KASHYAP</td>
+                            <td>TEACHER</td>
+                            <td>₹10000</td>
+                            <td>123456789</td>
+                            <td>123423684357</td>
+                        </tr>
+                        <tr>
+                            <td>SANNIDHI BHAVANA</td>
+                            <td>TEACHER</td>
+                            <td>₹11,000</td>
+                            <td>123456789</td>
+                            <td>123423684357</td>
+                        </tr>
+                        <tr>
+                            <td>TEKULA SEKHAR</td>
+                            <td>ACCOUNTANT</td>
+                            <td>₹12,000</td>
+                            <td>123456789</td>
+                            <td>123423684357</td>
+                        </tr>
+                        <tr>
+                            <td>TATIKONDA YATHIESWAR</td>
+                            <td>TEACHER</td>
+                            <td>₹15,000</td>
+                            <td>123456789</td>
+                            <td>123423684357</td>
+                        </tr>
+                        <tr>
+                            <td>SURRIREDDY RISHI</td>
+                            <td>TEACHER</td>
+                            <td>₹16,000</td>
+                            <td>123456789</td>
+                            <td>123423684357</td>
+                        </tr>
+                        <tr>
+                            <td>JAMPANI SANDEEP</td>
+                            <td>TEACHER</td>
+                            <td>₹18,000</td>
+                            <td>123456789</td>
+                            <td>123423684357</td>
+                        </tr>
+                        <tr>
+                            <td>MEENUGU SATWIK</td>
+                            <td>HOD</td>
+                            <td>₹50,000</td>
+                            <td>123456789</td>
+                            <td>123423684357</td>
+                        </tr>
+                        <tr>
+                            <td>DAKOJU SRINITYA</td>
+                            <td>PRINCIPAL</td>
+                            <td>₹70,000</td>
+                            <td>123456789</td>
+                            <td>123423684357</td>
+                        </tr>
+        
+
+    <!-- Bootstrap JS for interactivity -->
+    </body>
+</html>
