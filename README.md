@@ -44,13 +44,10 @@ Team-08/
 ## 🖥️ Usage
 1. Clone this repository:
    ```bash
-   git clone https://github.com/your-username/Team-08.git
+  [ git clone https://github.com/vamsikrish12/SCHOOL-MANGAMENT-SYSTEM.git]
    ```
-2. Navigate into the project:
-   ```bash
-   cd Team-08/html
    ```
-3. Open `index.html` in your browser to start.  
+2. Open `index.html` in your browser to start.  
 
 ---
 
