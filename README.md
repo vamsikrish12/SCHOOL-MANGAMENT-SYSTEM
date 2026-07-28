@@ -3,6 +3,7 @@
 A **School Management System Frontend** built with **HTML, CSS, and static assets**.  
 This project provides separate portals for **Admin, Teacher, Student, and Parent** with role-based login pages and dashboards.  
 
+live link :https://school-mangament-system-beta.vercel.app/
 ---
 
 ## 📂 Project Structure
