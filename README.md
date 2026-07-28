@@ -1,4 +1,4 @@
-# 🎓 School Management System (Team-08)
+# 🎓 School Management System 
 
 A **School Management System Frontend** built with **HTML, CSS, and static assets**.  
 This project provides separate portals for **Admin, Teacher, Student, and Parent** with role-based login pages and dashboards.  
@@ -61,9 +61,6 @@ Team-08/
 - 📱 Improved responsive UI  
 
 ---
-
-## 👨‍💻 Team-08
-This project was developed as part of an academic project by M.HaniSatwik .  
 
 ---
 
